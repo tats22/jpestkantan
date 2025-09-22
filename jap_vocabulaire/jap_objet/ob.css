@@ -1,0 +1,70 @@
+/* ===== Carte principale ===== */
+.card {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.card p.lead {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center;
+}
+
+/* ===== Tableau vocabulaire ===== */
+.vocab-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.vocab-table th,
+.vocab-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.vocab-table th {
+  background-color: #3b3b98;
+  color: #fff;
+}
+
+.vocab-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* ===== Bouton de navigation entre niveaux ===== */
+.levels-nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.levels-nav a {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #4f46e5;      /* violet accent */
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+  transition: all 0.25s ease;
+}
+
+.levels-nav a:hover {
+  background: #3730a3;       /* violet foncé au hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(55, 48, 163, 0.4);
+}

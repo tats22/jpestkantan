@@ -1,0 +1,319 @@
+:root {
+  /* 🔵 Bleu principal */
+  --blue: #2563eb;
+  --blue-dark: #1e40af;
+  --blue-light: #dbeafe;
+
+  /* 🔴 Rouge secondaire */
+  --red: #ef4444;
+  --red-dark: #b91c1c;
+  --red-light: #fee2e2;
+
+  /* ⚫ Neutres */
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --text: #111111;
+  --border: #e5e7eb;
+}
+
+/* Reset global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Header statique */
+header {
+  background: rgba(239, 68, 68, 0.2); /* rouge clair transparent */
+  backdrop-filter: blur(4px);
+  padding: 18px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+/* Container et nav */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo + texte côte à côte */
+.brand {
+  display: flex;
+  align-items: center;  /* aligne verticalement logo et texte */
+  gap: 12px;            /* espace entre logo et texte */
+}
+
+.brand .logo {
+  width: 60px;
+  height: 60px;
+  font-size: 26px;
+  font-weight: 700;
+  background: var(--red);   /* fond rouge */
+  color: white;             /* texte blanc */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-family: 'Verdana', 'Segoe UI', sans-serif;
+}
+
+.brand .logo-text {
+  font-size: 24px;          /* texte “JAP KANTAN” */
+  font-weight: 700;
+  color: var(--text);
+  font-family: 'Verdana', 'Segoe UI', sans-serif;
+}
+
+/* Menu nav inchangé */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 14px;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background: var(--blue-light);
+  color: var(--blue);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto 24px;
+}
+
+.hero .cta-btn {
+  background: var(--blue);
+  color: white;
+  padding: 14px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.hero .cta-btn:hover {
+  background: var(--blue-dark);
+  transform: translateY(-2px);
+}
+
+/* Main content */
+main {
+  padding: 40px 0;
+}
+
+.card {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(11,15,30,0.06);
+  margin-bottom: 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(11,15,30,0.1);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+p.lead {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+/* Menu tiles */
+.menus {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.menu-tile {
+  flex: 1 1 160px;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fff, #f9fafb);
+  box-shadow: 0 2px 8px rgba(12,15,30,0.04);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.menu-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(11,15,30,0.12);
+}
+
+.menu-tile a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+/* Boutons globaux */
+.btn-blue {
+  background: var(--blue);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-blue:hover {
+  background: var(--blue-dark);
+  transform: translateY(-2px);
+}
+
+.btn-red {
+  background: var(--red);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-red:hover {
+  background: var(--red-dark);
+  transform: translateY(-2px);
+}
+
+/* Formulaire Contact */
+form label {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin-bottom: 14px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--blue);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+form button {
+  background: var(--red);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background: var(--red-dark);
+  transform: translateY(-1px);
+}
+
+/* Quiz feedback */
+.quiz-correct {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.quiz-wrong {
+  background: var(--red-light);
+  color: var(--red-dark);
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  padding: 28px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  background: #f3f4f6;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width:880px) {
+  nav ul {
+    display: flex !important;  /* menu toujours visible */
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mobile-toggle,
+  .mobile-nav {
+    display: none; /* pas de hamburger */
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compteurs Japonais - Japonais est Kantan</title>
+  <link rel="stylesheet" href="../../jap_web1/jap_web1.css">
+  <link rel="stylesheet" href="jap_comp.css">
+  <style>
+    /* Conteneur scrollable pour le tableau */
+    .table-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .vocab-table {
+      min-width: 900px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">JPN</div>
+        <div>Japonais est Kantan</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../../jap_web1.html">Accueil</a></li>
+          <li><a href="../jap_vocabulaire.html">Vocabulaire</a></li>
+          <li><a href="../../jap_quiz/jap_quiz.html">Quiz</a></li>
+          <li><a href="../../contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <section class="card">
+      <h1>Compteurs Japonais 🔢</h1>
+      <p class="lead">Apprends les compteurs japonais et leur usage :</p>
+
+      <div class="table-container">
+        <table class="vocab-table">
+          <thead>
+            <tr>
+              <th>Compteur</th>
+              <th>Lecture (Hiragana / Kanji)</th>
+              <th>Usage / Signification</th>
+              <th>Exemple</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>歳</td><td>さい（歳）</td><td>Âge</td><td>私は20歳です (わたしは20さいです)</td></tr>
+            <tr><td>匹</td><td>ひき（匹）</td><td>Petits animaux</td><td>猫が2匹います (ねこがにひきいます)</td></tr>
+            <tr><td>個</td><td>こ（個）</td><td>Objets ronds ou petits objets</td><td>りんごを3個食べました (りんごをさんこたべました)</td></tr>
+            <tr><td>本</td><td>ほん（本）</td><td>Objets longs et cylindriques</td><td>鉛筆を5本買いました (えんぴつをごほんかいました)</td></tr>
+            <tr><td>枚</td><td>まい（枚）</td><td>Feuilles plates / objets fins</td><td>紙を10枚コピーしました (かみをじゅうまいコピーしました)</td></tr>
+            <tr><td>頭</td><td>とう（頭）</td><td>Gros animaux</td><td>牛が1頭います (うしがいっとういます)</td></tr>
+            <tr><td>着</td><td>ちゃく（着）</td><td>Vêtements</td><td>シャツを2着買いました (しゃつをにちゃくかいました)</td></tr>
+            <tr><td>人</td><td>にん（人）</td><td>Personnes</td><td>学生が5人います (がくせいがごにんいます)</td></tr>
+            <tr><td>冊</td><td>さつ（冊）</td><td>Livres</td><td>本を3冊読みました (ほんをさんさつよみました)</td></tr>
+            <tr><td>台</td><td>だい（台）</td><td>Véhicules / machines</td><td>車を2台持っています (くるまをにだいもっています)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Japonais est Kantan — Apprends le japonais facilement
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

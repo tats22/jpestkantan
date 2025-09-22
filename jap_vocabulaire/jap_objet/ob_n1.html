@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Objets N1 - Japonais est Kantan</title>
+  <link rel="stylesheet" href="../../jap_web1/jap_web1.css">
+  <link rel="stylesheet" href="ob.css">
+
+  <!-- CSS pour tableau scrollable -->
+  <style>
+    /* Conteneur scrollable pour le tableau */
+    .table-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .vocab-table {
+      min-width: 900px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">JPN</div>
+        <div>Japonais est Kantan</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../../jap_web1.html">Accueil</a></li>
+          <li><a href="../jap_vocabulaire.html">Vocabulaire</a></li>
+          <li><a href="../../jap_quiz/jap_quiz.html">Quiz</a></li>
+          <li><a href="../../contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <section class="card">
+      <h1>Objets — Niveau N1 🎓</h1>
+      <p class="lead">Voici une liste d’objets et termes plus avancés pour le niveau N1 :</p>
+
+      <!-- Tableau scrollable -->
+      <div class="table-container">
+        <table class="vocab-table">
+          <thead>
+            <tr>
+              <th>Kanji</th>
+              <th>Hiragana</th>
+              <th>Français</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>遺産</td><td>いさん</td><td>Héritage, patrimoine</td></tr>
+            <tr><td>設備</td><td>せつび</td><td>Équipement, installation</td></tr>
+            <tr><td>備品</td><td>びひん</td><td>Accessoire, matériel fourni</td></tr>
+            <tr><td>標識</td><td>ひょうしき</td><td>Panneau, signalisation</td></tr>
+            <tr><td>彫刻</td><td>ちょうこく</td><td>Sculpture</td></tr>
+            <tr><td>機械</td><td>きかい</td><td>Machine</td></tr>
+            <tr><td>装置</td><td>そうち</td><td>Dispositif, appareillage</td></tr>
+            <tr><td>武器</td><td>ぶき</td><td>Arme</td></tr>
+            <tr><td>資料</td><td>しりょう</td><td>Documents, données</td></tr>
+            <tr><td>原稿</td><td>げんこう</td><td>Manuscrit</td></tr>
+            <tr><td>証拠</td><td>しょうこ</td><td>Preuve</td></tr>
+            <tr><td>契約書</td><td>けいやくしょ</td><td>Contrat écrit</td></tr>
+            <tr><td>成分表</td><td>せいぶんひょう</td><td>Liste des ingrédients / composition</td></tr>
+            <tr><td>模型</td><td>もけい</td><td>Maquette, modèle réduit</td></tr>
+            <tr><td>標本</td><td>ひょうほん</td><td>Spécimen, échantillon</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Navigation -->
+      <div class="levels-nav">
+        <a href="ob_n2.html">⬅ N2</a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Japonais est Kantan — Apprends le japonais facilement
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
