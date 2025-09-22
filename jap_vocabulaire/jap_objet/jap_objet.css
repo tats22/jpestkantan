@@ -1,0 +1,63 @@
+/* ===== Carte principale ===== */
+.card {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.card p.lead {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+  text-align: center;
+}
+
+/* ===== Menu des niveaux d'objets ===== */
+.object-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.object-tile {
+  background: #ffffff;
+  border: 2px solid #3b3b98;
+  border-radius: 12px;
+  padding: 25px 15px;
+  text-align: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.object-tile a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 18px;
+  display: block;
+}
+
+.object-tile:hover {
+  transform: translateY(-5px);
+  background: #eef2ff;
+  border-color: #2c2a7d;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .object-tile a {
+    font-size: 16px;
+  }
+}
