@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Objets N2 - Japonais est Kantan</title>
+  <!-- CSS global -->
+  <link rel="stylesheet" href="../../jap_web1/jap_web1.css">
+  <!-- CSS spécifique aux objets -->
+  <link rel="stylesheet" href="ob.css">
+  <style>
+    /* Conteneur scrollable pour le tableau */
+    .table-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .vocab-table {
+      min-width: 900px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">JPN</div>
+        <div>Japonais est Kantan</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../../jap_web1.html">Accueil</a></li>
+          <li><a href="../jap_vocabulaire.html">Vocabulaire</a></li>
+          <li><a href="../../jap_quiz/jap_quiz.html">Quiz</a></li>
+          <li><a href="../../contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <section class="card">
+      <h1>Objets — Niveau N2 📚</h1>
+      <p class="lead">Voici une liste d’objets utiles pour le niveau N2 :</p>
+
+      <div class="table-container">
+        <table class="vocab-table">
+          <thead>
+            <tr>
+              <th>Kanji</th>
+              <th>Hiragana</th>
+              <th>Français</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>書類</td><td>しょるい</td><td>Documents</td></tr>
+            <tr><td>封筒</td><td>ふうとう</td><td>Enveloppe</td></tr>
+            <tr><td>名刺</td><td>めいし</td><td>Carte de visite</td></tr>
+            <tr><td>印鑑</td><td>いんかん</td><td>Tampon personnel</td></tr>
+            <tr><td>財布</td><td>さいふ</td><td>Portefeuille</td></tr>
+            <tr><td>鍵</td><td>かぎ</td><td>Clé</td></tr>
+            <tr><td>携帯電話</td><td>けいたいでんわ</td><td>Téléphone portable</td></tr>
+            <tr><td>充電器</td><td>じゅうでんき</td><td>Chargeur</td></tr>
+            <tr><td>眼鏡</td><td>めがね</td><td>Lunettes</td></tr>
+            <tr><td>傘</td><td>かさ</td><td>Parapluie</td></tr>
+            <tr><td>新聞</td><td>しんぶん</td><td>Journal</td></tr>
+            <tr><td>雑誌</td><td>ざっし</td><td>Magazine</td></tr>
+            <tr><td>辞書</td><td>じしょ</td><td>Dictionnaire</td></tr>
+            <tr><td>定規</td><td>じょうぎ</td><td>Règle (outil)</td></tr>
+            <tr><td>消しゴム</td><td>けしごむ</td><td>Gomme à effacer</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Navigation -->
+      <div class="levels-nav">
+        <a href="ob_n3.html">⬅ N3</a>
+        <a href="ob_n1.html">N1 ➡</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Japonais est Kantan — Apprends le japonais facilement
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
